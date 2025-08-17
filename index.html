@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-container">
+    <div class="player">
+      <div class="song-info">
+        <span id="song-title">Song Title</span>
+        <span id="song-duration">0:00 / 0:00</span>
+      </div>
+      <div class="progress-bar-container">
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="prev" aria-label="Previous"><span>&#9198;</span></button>
+        <button id="play" aria-label="Play/Pause"><span>&#9654;</span></button>
+        <button id="next" aria-label="Next"><span>&#9197;</span></button>
+      </div>
+      <div class="volume-container">
+        <span class="volume-icon">🔊</span>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+      </div>
+      <div class="playlist">
+        <ul id="playlist-list">
+          <!-- Playlist items will be injected here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html> 
